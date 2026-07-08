@@ -31,26 +31,33 @@ This builds the PHP image for your system.
 docker-compose up -d
 ```
 
-### 3. Install dependencies
+### 3. Create the environment file
+
+```bash
+cd data
+copy .env.example .env
+```
+
+### 4. Install dependencies
 
 ```bash
 docker-compose exec app composer install
 ```
 
-### 4. Generate app key
+### 5. Generate app key
 
 ```bash
 docker-compose exec app php artisan key:generate
 ```
 
-### 5. Run migrations and seed
+### 6. Run migrations and seed
 
 ```bash
 docker-compose exec app php artisan migrate
 docker-compose exec app php artisan db:seed
 ```
 
-### 6. Access the application
+### 7. Access the application
 
 Open browser: **http://localhost:8080**
 
