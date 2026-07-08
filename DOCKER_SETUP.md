@@ -64,17 +64,6 @@ https://url-shortner-demo.pages.dev/
 
 ---
 
-## Database Access
-
-**From MySQL client on your host machine:**
-- Host: `localhost`
-- Port: `3306`
-- User: `laravel`
-- Password: `secret`
-- Database: `url_shortner`
-
----
-
 ## For XAMPP Setup
 
 See [README.md](README.md)
