@@ -55,6 +55,14 @@ Then open: http://127.0.0.1:8000
 
 ---
 
+## Demo
+
+**For a detailed demo, visit:**
+
+https://url-shortner-demo.pages.dev/
+
+---
+
 ## For Docker Setup
 
 See [DOCKER_SETUP.md](DOCKER_SETUP.md)

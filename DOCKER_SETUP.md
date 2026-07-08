@@ -16,6 +16,15 @@ docker-compose build
 
 This builds the PHP image for your system.
 
+> The Docker setup uses these default MySQL credentials:
+>
+> - `DB_HOST=mysql`
+> - `DB_DATABASE=url_shortner`
+> - `DB_USERNAME=laravel`
+> - `DB_PASSWORD=secret`
+>
+> These values are configured in `docker-compose.yml` and `data/.env`.
+
 ### 2. Start all containers
 
 ```bash
@@ -47,6 +56,14 @@ Open browser: **http://localhost:8080**
 
 ---
 
+## Demo
+
+**For a detailed demo, visit:**
+
+https://url-shortner-demo.pages.dev/
+
+---
+
 ## Database Access
 
 **From MySQL client on your host machine:**
@@ -55,35 +72,6 @@ Open browser: **http://localhost:8080**
 - User: `laravel`
 - Password: `secret`
 - Database: `url_shortner`
-
-> Note: This `localhost` address is for tools running on your host machine. Inside the PHP container, the Laravel app must use `DB_HOST=mysql` because it connects to the MySQL service by Docker service name.
-
----
-
-## Common Commands
-
-```bash
-# View running containers
-docker-compose ps
-
-# View logs
-docker-compose logs -f
-
-# Access PHP container shell
-docker-compose exec app bash
-
-# Run artisan commands
-docker-compose exec app php artisan <command>
-
-# Stop containers
-docker-compose stop
-
-# Stop and remove containers (keeps data)
-docker-compose down
-
-# Stop and remove everything
-docker-compose down -v
-```
 
 ---
 
