@@ -1,0 +1,16 @@
+.git
+.gitignore
+
+data/vendor
+data/node_modules
+
+data/storage/logs/*
+data/storage/framework/cache/*
+data/storage/framework/sessions/*
+data/storage/framework/views/*
+
+data/bootstrap/cache/*
+
+docker-compose.yml
+README.md
+debug.log

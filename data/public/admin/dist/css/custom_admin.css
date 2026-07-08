@@ -1,0 +1,142 @@
+/***************************************************************************Loader 1 Start**********************************************************************/
+.loader1 {
+    position:fixed;
+    width:100%;
+    left:0;right:0;top:0;bottom:0;
+    background-color: rgb(255 255 255);
+    z-index:9999;
+    text-align: center;
+    padding-top: 22%;
+}
+/***************************************************************************Loader 1 End************************************************************************/
+/*****************************************************************Error Message Start*************************************************************************/
+.error-msg-print{
+    color: red;
+    font-size: 16px;
+    font-weight: 600;
+}
+.image-dimension-msg{
+    font-size: 14px;
+    font-weight: 800;
+    color: #f00;
+}
+.alert{
+    width: 100%;
+}
+/******************************************************************Error Message End**************************************************************************/
+/**************************************************Select 2******************************************************/
+.selection .select2-selection.select2-selection--single{
+    height: 42px;
+}
+.select2-selection__arrow{
+    margin-top: 7px;
+}
+/**************************************************Select 2******************************************************/
+.navbar-expand .navbar-nav {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card-footer{
+    text-align: end;
+}
+table#example1 tbody tr td{
+    cursor: default;
+}
+table#example1 tr{
+    text-align: center;
+}
+table#example4 tbody tr td{
+    cursor: default;
+}
+table#example4 tr{
+    text-align: center;
+}
+
+.select2-container--default .select2-dropdown .select2-search__field:focus, .select2-container--default .select2-search--inline .select2-search__field:focus {
+    border: none;
+}
+.select2-container--default .select2-selection--multiple {
+    padding-top: 0px!important;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice{
+    color: black;
+}
+/**************************************************Toster Start******************************************************/
+.toast-top-right {
+    top: 12px;
+    left: 50%!important;
+    right: auto!important;
+    transform: translateX(-50%)!important;
+}
+#toast-container .toast-error {
+    background-color: #ff0119;
+}
+#toast-container .toast-success {
+    background-color: #0ec037;
+}
+#toast-container>div{
+    opacity: 1!important;
+}
+/**************************************************Toster End******************************************************/
+
+.select2-container--default .select2-search--dropdown .select2-search__field:focus{
+    border: 1px solid #aaa;
+}
+.select2-container--default .select2-selection--multiple{
+    height:auto;
+}
+td span.type-success{
+    border: 1px solid #0b0b0b;
+    border-radius: 4px;
+    padding: 5px 5px 5px 5px;
+    background: #36b004;
+    color: #fff;
+}
+td span.type-error{
+    border: 1px solid #0b0b0b;
+    border-radius: 4px;
+    padding: 5px 5px 5px 5px;
+    background: #ff0404;
+    color: #fff;
+}
+
+.main-gift{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0px 4px 2px rgb(0 0 0 / 8%);
+}
+.main-gift .pic-area{
+    height: 150px;
+    overflow: hidden;
+    width: 100%;
+}
+.main-gift .pic-area img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 4px 4px 0 0;
+}
+.main-gift .price-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 20px 10px;
+    border-radius: 0 0 4px 4px;
+}
+.main-gift .price-area p{
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+}
+table tbody tr td span.view-all-images{
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    padding: 0 3px;
+    background: #c1e5fa;
+    box-shadow: 4px 4px #888888;
+    font-size: 13px;
+}
+.input-group-btn button.btn.btn-danger.remove.fa.fa-trash{
+    padding: 10px 15px;
+}
