@@ -12,7 +12,6 @@ Quick start guide after pulling from git.
 
 ```bash
 git clone https://github.com/gourabmal/url-shortner.git
-cd data
 ```
 
 ### 2. Build Docker image
