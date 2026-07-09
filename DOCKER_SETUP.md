@@ -8,7 +8,14 @@ Quick start guide after pulling from git.
 
 ## Quick Start
 
-### 1. Build Docker image
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/gourabmal/url-shortner.git
+cd data
+```
+
+### 2. Build Docker image
 
 ```bash
 docker-compose build
@@ -25,41 +32,46 @@ This builds the PHP image for your system.
 >
 > These values are configured in `docker-compose.yml` and `data/.env`.
 
-### 2. Start all containers
+### 3. Start all containers
 
 ```bash
 docker-compose up -d
 ```
 
-### 3. Create the environment file
+### 4. Create the environment file
 
 ```bash
-cd data
 copy .env.example .env
 ```
 
-### 4. Install dependencies
+> Update the SMTP details in `data/.env` before using email features (mail host, port, username, password, and from address).
+
+### 5. Install dependencies
 
 ```bash
 docker-compose exec app composer install
 ```
 
-### 5. Generate app key
+### 6. Generate app key
 
 ```bash
 docker-compose exec app php artisan key:generate
 ```
 
-### 6. Run migrations and seed
+### 7. Run migrations and seed
 
 ```bash
 docker-compose exec app php artisan migrate
 docker-compose exec app php artisan db:seed
 ```
 
-### 7. Access the application
+### 8. Access the application
 
 Open browser: **http://localhost:8080**
+
+### Portal Login
+
+Open: **http://localhost:8080/admin-login**
 
 ---
 
